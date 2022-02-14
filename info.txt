@@ -1,0 +1,18 @@
+Space complexity: Since we keep a map in the DAU class it will take
+O(n) space when n is the number of lines in the file, for the n lines data that we save in the constructor.
+
+Time complexity:
+Since we already kept all the data in the map then calling 
+"getUsersNum" takes O(1) since we only check if the date exists and if
+it does we take its info. And since the map is a HashMap it takes O(1).
+
+*Time complexity of constructor by istself is O(n) since it loops on all
+n lines and does O(1) for each line.
+
+More: time complexity can't be improved since it is already O(1).
+You can improve space complexity if you do not save the DAU but 
+open it in each call to function and run on all lines to get number of 
+users in a certain date. That will get O(1) space but will change time to
+O(n).
+Since changes to thefile probably happen less often taking the better
+time then space seems more benefical.
